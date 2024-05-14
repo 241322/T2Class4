@@ -19,9 +19,9 @@
       <td colspan="4"> <input class="input" type="text" id="result" placeholder="0" ></td>
     </tr>
     <tr>
-      <td> <input type="button" value="C" onclick="" class="button-operator"></td>
-      <td> <input type="button" value="DEL" onclick="" class="button-operator"></td>
-      <td> <input type="button" value="%" onclick="" class="button-operator"></td>
+      <td> <input type="button" value="C" onclick="clearScreen()" class="button-operator"></td>
+      <td> <input type="button" value="DEL" onclick="clearScreen()" class="button-operator"></td>
+      <td> <input type="button" value="%" onclick="display('%')" class="button-operator"></td>
       <td> <input type="button" value="/" onclick="display('/')" class="button-operator"></td>
     </tr>
 
@@ -50,7 +50,7 @@
       <td> <input type="button" value="00" onclick="display('00')" class="button-number"></td>
       <td> <input type="button" value="0" onclick="display('0')" class="button-number"></td>
       <td> <input type="button" value="." onclick="display('.')" class="button-number"></td>
-      <td> <input type="button" value="=" onclick="" class="equal-btn"></td>
+      <td> <input type="button" value="=" onclick="calculate()" class="equal-btn"></td>
     </tr>
   </table>
 </div>
@@ -63,7 +63,7 @@
          
     <!-- Input field -->
     <label>Enter your name</label>
-    <input type="text" name="firstname">
+    <input type="text" name="name">
     
     <!-- Textarea -->
     <label>Write a few words about you</label>
